@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>가맹점 만족을 올리는 SV 커뮤니케이션 2시간 특강 | 염원 SV 아카데미</title>
+<meta name="description" content="점검하러 오는 SV에서 점주가 기다리는 SV로. 프랜차이즈 슈퍼바이저 가맹점 만족 커뮤니케이션 2시간 실전 특강. 강사 염혜단 대표(㈜염원컴퍼니).">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+:root{
+  --red:#E3202B;--red-d:#B8141E;--red-soft:#FDECEC;
+  --ink:#17181C;--ink2:#34363C;--gray:#70737B;--line:#E6E3DF;
+  --warm:#F4F2F0;--warm2:#FAF8F6;--yellow:#FFE45C;
+  --grad:linear-gradient(90deg,#E3202B 0%,#FF6A3D 100%);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+section[id],main[id]{scroll-margin-top:130px}
+body{font-family:Pretendard,"Malgun Gothic",sans-serif;color:var(--ink);background:#fff;line-height:1.55;word-break:keep-all;-webkit-font-smoothing:antialiased;font-size:19px}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.red{color:var(--red)}
+.mark{background:linear-gradient(transparent 55%,var(--yellow) 55%)}
+
+/* ===== scroll reveal ===== */
+.rv{opacity:0;transform:translateY(40px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+.d1{transition-delay:.15s}.d2{transition-delay:.3s}.d3{transition-delay:.45s}.d4{transition-delay:.6s}.d5{transition-delay:.75s}
+
+/* ===== header ===== */
+.gnb{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line)}
+.gnb-in{max-width:1180px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:64px;padding:0 20px}
+.gnb-in img{height:46px}
+.tabs{position:sticky;top:64px;z-index:40;background:#fff;border-bottom:1px solid var(--line)}
+.tabs ul{max-width:1180px;margin:0 auto;display:flex;gap:4px;list-style:none;padding:0 20px;overflow-x:auto;scrollbar-width:none}
+.tabs ul::-webkit-scrollbar{display:none}
+.tabs a{display:block;padding:14px 12px;font-weight:700;font-size:16px;color:var(--gray);white-space:nowrap;border-bottom:3px solid transparent}
+.tabs a:hover{color:var(--ink);border-bottom-color:var(--red)}
+
+/* ===== buttons ===== */
+.btn{position:relative;overflow:hidden;display:inline-flex;align-items:center;justify-content:center;gap:6px;background:var(--red);color:#fff;font-weight:800;font-size:18px;padding:16px 26px;border-radius:14px;border:0;cursor:pointer}
+.btn.block{width:100%}
+.btn.ghost{background:#fff;color:var(--red);border:2px solid var(--red)}
+.btn.shine:after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.55),transparent);transform:skewX(-20deg);animation:shine 2.8s infinite}
+@keyframes shine{0%{left:-60%}55%,100%{left:130%}}
+.btn.pulse{animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(227,32,43,.55)}70%{box-shadow:0 0 0 16px rgba(227,32,43,0)}100%{box-shadow:0 0 0 0 rgba(227,32,43,0)}}
+.gnb .btn{font-size:15px;padding:10px 18px;border-radius:10px}
+
+/* ===== layout ===== */
+.wrap{max-width:1180px;margin:0 auto;padding:28px 20px 80px;display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:48px;align-items:start}
+.story{max-width:720px;width:100%;min-width:0}
+body{overflow-x:hidden}
+.aside{position:sticky;top:136px}
+
+/* ===== sections common ===== */
+.sec{padding:110px 0 0;text-align:center}
+.kicker{display:inline-block;font-size:18px;font-weight:800;color:var(--red);margin-bottom:14px}
+.h{font-size:clamp(34px,7vw,54px);line-height:1.22;font-weight:900;letter-spacing:-1.8px}
+.sub{font-size:clamp(19px,3.4vw,23px);color:var(--ink2);margin-top:20px;line-height:1.6;font-weight:500}
+.panel{background:var(--warm);border-radius:30px;padding:56px 26px;margin-top:40px;overflow:hidden}
+.panel.dark{background:var(--ink);color:#fff}
+
+/* ===== HERO ===== */
+.hero{position:relative;border-radius:26px;overflow:hidden;background:#000;aspect-ratio:4/3.3}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.6;animation:kenburns 18s ease-in-out infinite alternate}
+@keyframes kenburns{from{transform:scale(1)}to{transform:scale(1.15) translate(-2%,-2%)}}
+.hero-txt{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:36px 30px;color:#fff;background:linear-gradient(180deg,rgba(0,0,0,0) 25%,rgba(0,0,0,.85) 100%)}
+.badges{display:flex;gap:8px;flex-wrap:wrap}
+.badge{display:inline-block;background:var(--red);color:#fff;font-weight:800;font-size:16px;padding:7px 14px;border-radius:8px}
+.badge.dark{background:#fff;color:var(--ink)}
+.hero .badge{animation:pop .6s both}
+.hero .badge+.badge{animation-delay:.2s}
+@keyframes pop{0%{transform:scale(0)}70%{transform:scale(1.15)}100%{transform:scale(1)}}
+.hero h1{font-size:clamp(38px,8.6vw,62px);line-height:1.18;font-weight:900;letter-spacing:-2px;margin:18px 0 14px}
+.strike{position:relative;display:inline-block;color:#cfcfcf}
+.strike:after{content:"";position:absolute;left:-2%;top:52%;height:7px;width:0;background:var(--red);border-radius:4px;animation:strike 7s infinite}
+@keyframes strike{0%,12%{width:0}24%,92%{width:104%}100%{width:0}}
+.newline{display:inline-block;animation:newline 7s infinite}
+@keyframes newline{0%,24%{opacity:0;transform:translateY(24px)}34%,92%{opacity:1;transform:none}100%{opacity:0}}
+.newline em{font-style:normal;color:#ff5d65}
+.hero p{font-size:clamp(18px,3.4vw,22px);font-weight:600;opacity:.92}
+
+.icons3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px}
+.ic3{background:var(--warm2);border:1px solid var(--line);border-radius:20px;padding:24px 10px;text-align:center}
+.ic3 .e{font-size:46px;line-height:1;display:inline-block;animation:bob 2.4s ease-in-out infinite}
+.ic3:nth-child(2) .e{animation-delay:.4s}.ic3:nth-child(3) .e{animation-delay:.8s}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.ic3 b{display:block;font-size:20px;font-weight:900;margin-top:12px}
+.ic3 span{display:block;font-size:16px;color:var(--gray);font-weight:600;margin-top:2px}
+.title-row{margin-top:26px;text-align:left}
+.title-row small{font-size:16px;color:var(--gray);font-weight:700}
+.title-row h2{font-size:clamp(24px,4.2vw,30px);line-height:1.35;font-weight:900;margin-top:6px;letter-spacing:-.6px}
+
+/* ===== PHONE CHAT ===== */
+.phone{max-width:420px;margin:40px auto 0;background:#fff;border-radius:40px;border:10px solid var(--ink);box-shadow:0 30px 60px rgba(0,0,0,.18);overflow:hidden;text-align:left}
+.phone-top{background:var(--ink);color:#fff;font-size:15px;font-weight:700;padding:6px 18px 14px;display:flex;align-items:center;gap:10px}
+.phone-top i{width:34px;height:34px;border-radius:50%;background:#555;display:flex;align-items:center;justify-content:center;font-style:normal;font-size:18px}
+.chatbox{height:590px;padding:20px 16px;background:#B8CBD9;display:flex;flex-direction:column;gap:12px;overflow:hidden}
+.msg{max-width:86%;font-size:19px;font-weight:600;line-height:1.45;padding:14px 18px;border-radius:20px;background:#fff;animation:msgin .35s cubic-bezier(.2,.9,.3,1.3) both;box-shadow:0 2px 6px rgba(0,0,0,.06)}
+.msg small{display:block;font-size:13px;color:var(--gray);margin-bottom:4px;font-weight:700}
+.msg.me{align-self:flex-end;background:#FEE500}
+@keyframes msgin{from{opacity:0;transform:translateY(16px) scale(.9)}to{opacity:1;transform:none}}
+.typing{display:inline-flex;gap:5px;padding:16px 18px;background:#fff;border-radius:20px;width:max-content;animation:msgin .3s both}
+.typing.me{align-self:flex-end;background:#FEE500}
+.typing i{width:9px;height:9px;border-radius:50%;background:#888;animation:dot 1s infinite}
+.typing i:nth-child(2){animation-delay:.15s}.typing i:nth-child(3){animation-delay:.3s}
+@keyframes dot{0%,60%,100%{transform:translateY(0);opacity:.4}30%{transform:translateY(-6px);opacity:1}}
+
+/* ===== CHAIN ===== */
+.chain{display:flex;align-items:center;justify-content:center;gap:0;margin:10px auto 0;max-width:640px}
+.cn{display:flex;flex-direction:column;align-items:center;gap:10px;flex:0 0 auto;position:relative}
+.cn .c{width:clamp(54px,14vw,104px);height:clamp(54px,14vw,104px);border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;font-size:clamp(28px,7vw,50px);box-shadow:0 8px 20px rgba(0,0,0,.08);position:relative}
+.cn b{font-size:clamp(16px,3.4vw,20px);font-weight:900}
+.cl{flex:1;height:6px;background:#d8d3cd;border-radius:3px;position:relative;margin:0 4px;margin-bottom:34px;min-width:18px}
+.cl .dot{position:absolute;top:50%;left:0;width:16px;height:16px;margin-top:-8px;border-radius:50%;background:var(--red);box-shadow:0 0 0 6px rgba(227,32,43,.2);animation:dotmove 6s infinite}
+@keyframes dotmove{0%{left:0;opacity:1}22%{left:calc(100% - 16px);opacity:1}26%,100%{left:calc(100% - 16px);opacity:0}}
+.cn.sv .c{animation:svbreak 6s infinite}
+@keyframes svbreak{0%,24%{background:#fff;transform:none}27%{transform:translateX(-8px)}30%{transform:translateX(8px)}33%{transform:translateX(-6px)}36%{transform:none;background:var(--red-soft)}36%,92%{background:var(--red-soft);box-shadow:0 0 0 5px var(--red)}100%{background:#fff}}
+.cn.sv .x{position:absolute;top:-8px;right:-8px;width:36px;height:36px;border-radius:50%;background:var(--red);color:#fff;font-size:20px;font-weight:900;display:flex;align-items:center;justify-content:center;animation:xpop 6s infinite}
+@keyframes xpop{0%,30%{transform:scale(0)}36%{transform:scale(1.3)}40%,92%{transform:scale(1)}100%{transform:scale(0)}}
+.cn.after .c,.cl.after{animation:fade 6s infinite}
+@keyframes fade{0%,36%{opacity:1;filter:none}46%,92%{opacity:.25;filter:grayscale(1)}100%{opacity:1}}
+.chain-msg{font-size:clamp(28px,5.6vw,42px);font-weight:900;margin-top:40px;line-height:1.3;letter-spacing:-1px}
+
+/* ===== VS ===== */
+.vs{display:grid;grid-template-columns:1fr auto 1fr;gap:14px;align-items:center;margin-top:44px}
+.vs-card{border-radius:26px;padding:34px 14px}
+.vs-card .e{font-size:62px;line-height:1}
+.vs-card b{display:block;font-size:clamp(28px,5.6vw,40px);font-weight:900;margin-top:12px;position:relative;display:inline-block}
+.vs-card span{display:block;font-size:17px;margin-top:8px;font-weight:600}
+.vs-card.bad{background:var(--warm);color:#8b8e94}
+.vs-card.bad b:after{content:"";position:absolute;left:-4%;top:50%;height:6px;background:var(--red);border-radius:3px;width:0;animation:strike2 4s infinite}
+@keyframes strike2{0%,20%{width:0}40%,95%{width:108%}100%{width:0}}
+.vs-card.good{background:var(--ink);color:#fff;animation:glow 4s infinite}
+@keyframes glow{0%,40%{transform:scale(1);box-shadow:none}55%{transform:scale(1.06)}65%,95%{transform:scale(1.03);box-shadow:0 0 0 5px var(--red),0 18px 40px rgba(227,32,43,.35)}100%{transform:scale(1)}}
+.vs-mid{font-size:24px;font-weight:900;color:var(--gray)}
+.stamp{display:inline-block;margin-top:56px;background:var(--ink);color:#fff;font-size:clamp(46px,10vw,76px);font-weight:900;padding:12px 40px;letter-spacing:-2px;animation:stamp 4s infinite}
+@keyframes stamp{0%{transform:scale(3) rotate(-12deg);opacity:0}12%{transform:scale(.92) rotate(-3deg);opacity:1}18%{transform:scale(1.04) rotate(-3deg)}24%,90%{transform:scale(1) rotate(-3deg);opacity:1}100%{opacity:0;transform:scale(1) rotate(-3deg)}}
+.big-line{font-size:clamp(30px,6vw,46px);font-weight:900;line-height:1.3;margin-top:30px;letter-spacing:-1.4px}
+
+/* ===== BEFORE AFTER ===== */
+.ba{margin-top:40px;background:#fff;border-radius:30px;box-shadow:0 20px 50px rgba(0,0,0,.08);overflow:hidden;border:1px solid var(--line)}
+.ba-tabs{display:grid;grid-template-columns:1fr 1fr}
+.ba-tabs span{padding:18px;font-size:22px;font-weight:900;color:#b5b5b5;background:var(--warm2);transition:.4s}
+.ba[data-m="b"] .tb{background:#5c5f66;color:#fff}
+.ba[data-m="a"] .ta{background:var(--red);color:#fff}
+.ba-stage{padding:34px 24px 40px;min-height:420px;display:flex;flex-direction:column;gap:26px}
+.sv-row{display:flex;gap:12px;align-items:flex-start;text-align:left}
+.av{flex:0 0 64px;height:64px;border-radius:50%;background:var(--warm);display:flex;align-items:center;justify-content:center;font-size:36px}
+.say{background:var(--warm);border-radius:6px 24px 24px 24px;padding:18px 22px;font-size:clamp(20px,3.8vw,25px);font-weight:700;line-height:1.45;min-height:76px}
+.say:after{content:"|";animation:blink .8s infinite;color:var(--red);font-weight:400}
+.say.done:after{content:""}
+@keyframes blink{50%{opacity:0}}
+.owner{display:flex;flex-direction:column;align-items:center;gap:10px}
+.face{font-size:96px;line-height:1;transition:transform .3s}
+.face.bump{animation:bump .5s}
+@keyframes bump{0%{transform:scale(.6)}60%{transform:scale(1.2)}100%{transform:scale(1)}}
+.react{font-size:clamp(22px,4.4vw,30px);font-weight:900;opacity:0;transform:translateY(10px);transition:.4s}
+.react.on{opacity:1;transform:none}
+.ba[data-m="b"] .react{color:#5c5f66}
+.ba[data-m="a"] .react{color:var(--red)}
+
+/* ===== TIMER ===== */
+.timer{display:grid;grid-template-columns:auto 1fr;gap:30px;align-items:center;margin-top:10px;text-align:left}
+.ring{width:220px;height:220px;border-radius:50%;background:conic-gradient(var(--red) 0%,#e8e4df 0);display:flex;align-items:center;justify-content:center}
+.ring-in{width:172px;height:172px;border-radius:50%;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.ring-in b{font-size:60px;font-weight:900;line-height:1;color:var(--red);font-variant-numeric:tabular-nums}
+.ring-in span{font-size:17px;font-weight:700;color:var(--gray);margin-top:6px}
+.segs{list-style:none;display:grid;gap:10px}
+.segs li{display:flex;align-items:center;gap:14px;background:#fff;border-radius:16px;padding:14px 18px;font-size:21px;font-weight:800;color:#b0b0b0;transition:.35s;border:2px solid transparent}
+.segs li .e{font-size:28px;filter:grayscale(1);transition:.35s}
+.segs li i{margin-left:auto;font-style:normal;font-size:16px;font-weight:700}
+.segs li.on{color:var(--ink);border-color:var(--red);transform:scale(1.04);box-shadow:0 10px 24px rgba(227,32,43,.15)}
+.segs li.on .e{filter:none}
+.segs li.done{color:var(--ink2)}
+.segs li.done .e{filter:none}
+.ratio{margin-top:40px}
+.ratio-bar{display:flex;height:64px;border-radius:18px;overflow:hidden;font-size:21px;font-weight:900;color:#fff}
+.ratio-bar div{display:flex;align-items:center;justify-content:center;width:0;transition:width 1.4s cubic-bezier(.2,.8,.2,1);white-space:nowrap;overflow:hidden}
+.ratio-bar .t{background:#5c5f66}.ratio-bar .p{background:var(--red)}
+.ratio.in .t{width:30%}.ratio.in .p{width:70%;transition-delay:.5s}
+.ratio p{font-size:22px;font-weight:800;margin-top:16px}
+
+/* ===== CURRICULUM ===== */
+.parts{display:grid;gap:18px;margin-top:44px;text-align:left}
+.part{display:grid;grid-template-columns:110px 1fr;border-radius:26px;overflow:hidden;background:#fff;border:1px solid var(--line);box-shadow:0 10px 28px rgba(0,0,0,.05)}
+.part .l{background:var(--red);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:18px 6px}
+.part:nth-child(even) .l{background:var(--ink)}
+.part .l .e{font-size:46px;line-height:1;animation:bob 2.6s ease-in-out infinite}
+.part .l small{font-size:15px;font-weight:900;letter-spacing:.5px}
+.part .r{padding:24px 24px}
+.part .r .tm{font-size:15px;font-weight:800;color:var(--red)}
+.part .r h4{font-size:clamp(23px,4.4vw,29px);font-weight:900;line-height:1.3;letter-spacing:-.8px;margin:4px 0 10px}
+.part .r p{font-size:18px;color:var(--ink2);font-weight:600}
+.part .r p+p{margin-top:2px}
+
+/* ===== ROLE PLAY ===== */
+.rp{position:relative;margin-top:40px;min-height:520px}
+.scene{position:absolute;inset:0;opacity:0;transform:translateX(40px);transition:.6s;pointer-events:none}
+.scene.on{opacity:1;transform:none;pointer-events:auto}
+.scene .no{display:inline-block;background:var(--red);color:#fff;font-weight:900;font-size:17px;padding:6px 14px;border-radius:999px}
+.scene .angry{font-size:92px;line-height:1;margin:22px 0 6px;display:inline-block}
+.scene.on .angry{animation:shake .5s 3}
+@keyframes shake{0%,100%{transform:rotate(0)}25%{transform:rotate(-10deg)}75%{transform:rotate(10deg)}}
+.scene .quote{background:#fff;border-radius:26px;padding:24px 22px;font-size:clamp(24px,4.8vw,32px);font-weight:900;line-height:1.35;letter-spacing:-1px;box-shadow:0 12px 30px rgba(0,0,0,.08);position:relative;margin:0 auto;max-width:560px}
+.scene .quote:before{content:"";position:absolute;top:-14px;left:50%;margin-left:-14px;border:14px solid transparent;border-top:0;border-bottom-color:#fff}
+.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:30px}
+.flow span{background:#fff;border-radius:16px;padding:16px 6px;font-size:17px;font-weight:800;color:#b8b8b8;transition:.35s;border:2px solid transparent;line-height:1.3}
+.flow span i{display:block;font-style:normal;font-size:14px;margin-bottom:4px}
+.flow span.on{background:var(--red);color:#fff;transform:translateY(-6px);box-shadow:0 10px 20px rgba(227,32,43,.3)}
+.rp-dots{display:flex;gap:8px;justify-content:center;margin-top:26px}
+.rp-dots b{width:10px;height:10px;border-radius:999px;background:#ccc;transition:.3s;cursor:pointer}
+.rp-dots b.on{width:34px;background:var(--red)}
+
+/* ===== KIT ===== */
+.kit{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:44px}
+.doc{background:#fff;border-radius:18px;padding:22px 18px 18px;box-shadow:0 14px 30px rgba(0,0,0,.08);position:relative;text-align:left;transform:rotate(var(--r,0deg));transition:transform .4s}
+.doc:hover{transform:rotate(0) translateY(-6px)}
+.doc .dh{display:flex;align-items:center;gap:8px;font-size:15px;font-weight:900;color:var(--red)}
+.doc .ln{height:10px;border-radius:5px;background:#ece8e3;margin-top:12px;position:relative;overflow:hidden}
+.doc .ln:after{content:"";position:absolute;inset:0;width:0;background:#c9c3bc;animation:write 5s infinite}
+.doc .ln:nth-of-type(2):after{animation-delay:.4s}.doc .ln:nth-of-type(3):after{animation-delay:.8s}.doc .ln:nth-of-type(4):after{animation-delay:1.2s}
+@keyframes write{0%{width:0}35%,90%{width:100%}100%{width:0}}
+.doc .ok{position:absolute;right:14px;top:40px;border:3px solid var(--red);color:var(--red);font-weight:900;font-size:16px;padding:4px 10px;border-radius:8px;transform:rotate(-12deg) scale(0);animation:okstamp 5s infinite}
+@keyframes okstamp{0%,40%{transform:rotate(-12deg) scale(0)}46%{transform:rotate(-12deg) scale(1.4)}52%,90%{transform:rotate(-12deg) scale(1)}100%{transform:rotate(-12deg) scale(0)}}
+.doc h5{font-size:clamp(21px,4vw,25px);font-weight:900;margin-top:18px;line-height:1.3;letter-spacing:-.5px}
+
+/* ===== CHECK ===== */
+.check{list-style:none;display:grid;gap:12px;text-align:left}
+.check li{background:#fff;border-radius:20px;padding:20px 20px 20px 70px;position:relative;font-size:clamp(20px,3.8vw,24px);font-weight:800;line-height:1.35;box-shadow:0 6px 18px rgba(0,0,0,.05)}
+.check li:before{content:"✓";position:absolute;left:20px;top:50%;margin-top:-17px;width:34px;height:34px;border-radius:50%;background:var(--red);color:#fff;font-size:20px;font-weight:900;display:flex;align-items:center;justify-content:center;transform:scale(0);transition:transform .4s cubic-bezier(.2,.9,.3,1.6)}
+.check li.in:before{transform:scale(1);transition-delay:.35s}
+
+/* ===== INSTRUCTOR ===== */
+.ins{margin-top:110px;background:var(--ink);color:#fff;border-radius:34px;overflow:hidden;text-align:center;padding:60px 24px 52px}
+.ins .en{font-size:clamp(38px,7vw,56px);font-weight:900;letter-spacing:-1.5px}
+.ins .ko{font-size:18px;opacity:.7}
+.ins-photo{width:min(300px,80%);margin:34px auto 0;position:relative}
+.ins-photo:before{content:"";position:absolute;inset:-8px;border-radius:220px 220px 26px 26px;background:conic-gradient(from var(--a,0deg),var(--red),#ff8a3d,var(--yellow),var(--red));animation:rot 4s linear infinite;box-shadow:0 0 40px rgba(227,32,43,.45)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.ins-photo img{position:relative;border-radius:200px 200px 20px 20px;background:#d9d4ce}
+.ins-photo{overflow:visible}
+.ins-photo .clip{position:relative;border-radius:200px 200px 20px 20px;overflow:hidden;background:var(--ink);padding:6px}
+.ins h4{font-size:clamp(36px,7vw,52px);font-weight:900;line-height:1.25;margin-top:34px;letter-spacing:-1.5px}
+.ins h4 em{font-style:normal;color:var(--yellow)}
+.ins .story-line{font-size:clamp(21px,4vw,26px);font-weight:700;margin-top:22px;line-height:1.55;opacity:.95}
+.ins .story-line b{color:var(--yellow)}
+.badges3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:34px}
+.badges3 div{background:rgba(255,255,255,.08);border-radius:20px;padding:22px 8px}
+.badges3 b{display:block;font-size:clamp(28px,5.4vw,38px);font-weight:900;color:#ff6b72;line-height:1.1}
+.badges3 span{display:block;font-size:16px;font-weight:700;margin-top:6px;opacity:.9}
+.ins details{margin-top:24px;text-align:left;background:rgba(255,255,255,.06);border-radius:20px;padding:6px 22px}
+.ins summary{cursor:pointer;font-size:19px;font-weight:800;padding:16px 0;list-style:none;text-align:center}
+.ins summary::-webkit-details-marker{display:none}
+.ins details li{list-style:none;font-size:17px;padding:5px 0;opacity:.92}
+.ins details ul{padding-bottom:18px}
+.books{display:flex;gap:18px;align-items:center;justify-content:center;margin-top:30px}
+.books img{width:120px;border-radius:8px;box-shadow:0 12px 30px rgba(0,0,0,.5);animation:float 4s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-10px) rotate(2deg)}}
+.books p{text-align:left;font-size:20px;font-weight:800;line-height:1.5}
+.books p small{display:block;font-size:15px;color:#ff8a90}
+
+/* ===== STATS ===== */
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:44px}
+.stat{background:var(--warm2);border-radius:24px;padding:30px 12px;border:1px solid var(--line)}
+.stat b{display:block;font-size:clamp(52px,10vw,72px);font-weight:900;color:var(--red);line-height:1;font-variant-numeric:tabular-nums;letter-spacing:-2px}
+.stat b small{font-size:.42em;letter-spacing:0}
+.stat > span{display:block;font-size:21px;font-weight:900;margin-top:12px}
+.stat .cnt{display:inline;font-size:inherit;margin:0}
+.src{font-size:13px;color:var(--gray);margin-top:16px;line-height:1.6}
+
+/* ===== REVIEWS marquee ===== */
+.mq{overflow:hidden;margin-top:40px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.mq-track{display:flex;gap:14px;width:max-content;animation:mq 38s linear infinite}
+.mq.rev .mq-track{animation-direction:reverse;animation-duration:44s}
+.mq+.mq{margin-top:14px}
+@keyframes mq{to{transform:translateX(-50%)}}
+.rcard{width:320px;flex:0 0 auto;background:#fff;border-radius:22px;padding:24px 22px;text-align:left;border:1px solid var(--line);box-shadow:0 6px 18px rgba(0,0,0,.05)}
+.rcard .st{color:var(--red);letter-spacing:3px;font-size:17px}
+.rcard p{font-size:20px;font-weight:800;line-height:1.45;margin-top:10px}
+.rcard small{display:block;font-size:14px;color:var(--gray);margin-top:12px;font-weight:600}
+.slides{position:relative;margin-top:30px;border-radius:26px;overflow:hidden;aspect-ratio:4/3;background:#000}
+.slides figure{position:absolute;inset:0;opacity:0;animation:slide 16s infinite}
+.slides figure:nth-child(2){animation-delay:4s}.slides figure:nth-child(3){animation-delay:8s}.slides figure:nth-child(4){animation-delay:12s}
+@keyframes slide{0%{opacity:0;transform:scale(1.08)}5%,25%{opacity:1}30%,100%{opacity:0;transform:scale(1)}}
+.slides img{width:100%;height:100%;object-fit:cover}
+.slides figcaption{position:absolute;left:18px;bottom:18px;background:var(--red);color:#fff;font-size:20px;font-weight:900;padding:8px 16px;border-radius:10px}
+
+/* ===== PACKAGES ===== */
+.pkgs{display:grid;gap:18px;margin-top:44px;text-align:left}
+.pkg{border-radius:26px;padding:30px 24px;background:#fff;border:2px solid var(--line);position:relative}
+.pkg.best{border:0;background:linear-gradient(#fff,#fff) padding-box,conic-gradient(from var(--a,0deg),var(--red),#ff9a3d,var(--yellow),var(--red)) border-box;border:4px solid transparent;animation:rot 4s linear infinite}
+@property --a{syntax:'<angle>';initial-value:0deg;inherits:false}
+@keyframes rot{to{--a:360deg}}
+.pkg .flag{position:absolute;top:-16px;left:22px;background:var(--red);color:#fff;font-size:15px;font-weight:900;padding:6px 14px;border-radius:999px;animation:bob 2s ease-in-out infinite}
+.pkg .e{font-size:44px;line-height:1}
+.pkg .k{font-size:17px;font-weight:900;color:var(--red);margin-top:10px}
+.pkg h5{font-size:clamp(25px,4.8vw,32px);font-weight:900;line-height:1.28;letter-spacing:-1px;margin-top:4px}
+.pkg .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.pkg .tags span{background:var(--warm);border-radius:999px;padding:8px 14px;font-size:16px;font-weight:700}
+.pkg .bot{display:flex;justify-content:space-between;align-items:center;margin-top:22px;padding-top:18px;border-top:2px dashed var(--line);gap:10px;flex-wrap:wrap}
+.pkg .bot b{font-size:24px;font-weight:900}
+
+/* ===== FAQ ===== */
+.faq{margin-top:36px;text-align:left}
+.faq details{background:var(--warm2);border-radius:20px;margin-bottom:12px;padding:4px 22px;border:1px solid var(--line)}
+.faq summary{cursor:pointer;list-style:none;font-size:clamp(19px,3.6vw,22px);font-weight:800;padding:20px 34px 20px 0;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:after{content:"+";position:absolute;right:0;top:14px;font-size:30px;color:var(--red);font-weight:500;transition:.3s}
+.faq details[open] summary:after{transform:rotate(45deg)}
+.faq details p{font-size:19px;color:var(--ink2);padding:0 0 22px;line-height:1.7}
+
+/* ===== APPLY ===== */
+.apply{margin-top:110px;background:var(--ink);color:#fff;border-radius:34px;padding:56px 24px;text-align:center}
+.apply .h{color:#fff}
+.form{display:grid;gap:14px;margin-top:34px;text-align:left}
+.form label{font-size:16px;font-weight:700;color:#ddd}
+.form input,.form select,.form textarea{width:100%;margin-top:6px;border:0;border-radius:14px;padding:16px;font:inherit;font-size:18px;background:#fff;color:var(--ink)}
+.form input:focus,.form select:focus,.form textarea:focus{outline:3px solid var(--red)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.agree{display:flex;gap:8px;align-items:flex-start;font-size:14px!important;font-weight:500!important}
+.agree input{width:auto!important;margin-top:4px!important}
+.contact{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:24px}
+.contact a{background:rgba(255,255,255,.1);border-radius:14px;padding:14px 18px;font-weight:800;font-size:18px}
+
+/* ===== ASIDE ===== */
+.side{border:1px solid var(--line);border-radius:24px;padding:28px 24px;background:#fff;box-shadow:0 10px 30px rgba(0,0,0,.06)}
+.side .k{font-size:14px;font-weight:800;color:var(--red)}
+.side h3{font-size:24px;line-height:1.35;font-weight:900;margin:6px 0 18px;letter-spacing:-.6px}
+.side-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:18px}
+.side-grid div{background:var(--warm2);border-radius:14px;padding:14px 8px;text-align:center}
+.side-grid .e{font-size:26px;line-height:1}
+.side-grid b{display:block;font-size:17px;font-weight:900;margin-top:6px}
+.side-grid small{font-size:13px;color:var(--gray);font-weight:600}
+.side-note{font-size:14px;color:var(--gray);margin-top:12px;text-align:center}
+.side-maker{display:flex;gap:12px;align-items:center;margin-top:18px;border-top:1px solid var(--line);padding-top:16px}
+.side-maker img{width:52px;height:52px;border-radius:50%;object-fit:cover;object-position:top}
+.side-maker b{display:block;font-size:17px}
+.side-maker small{color:var(--gray);font-size:13px}
+
+.mbar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:60;background:#fff;border-top:1px solid var(--line);padding:10px 14px calc(10px + env(safe-area-inset-bottom));gap:10px}
+.mbar .btn{flex:1;padding:17px;font-size:19px}
+.mbar .tel{flex:0 0 64px;background:#fff;color:var(--ink);border:2px solid var(--line);font-size:24px}
+footer{background:#0e0f12;color:#a9abb1;padding:44px 20px 120px;font-size:15px;text-align:center;line-height:1.8}
+footer img{height:38px;margin:0 auto 14px}
+
+@media (max-width:1024px){.wrap{grid-template-columns:minmax(0,1fr);gap:0}.aside{display:none}.story{margin:0 auto}.mbar{display:flex}}
+@media (max-width:600px){
+  body{font-size:18px}
+  .wrap{padding:16px 14px 60px}
+  .hero{border-radius:20px;aspect-ratio:4/5}
+  .hero-txt{padding:26px 22px}
+  .panel{padding:44px 16px;border-radius:24px}
+  .timer{grid-template-columns:1fr;justify-items:center}
+  .timer .segs{width:100%}
+  .part{grid-template-columns:84px 1fr}
+  .part .r{padding:20px 18px}
+  .flow{grid-template-columns:repeat(2,1fr)}
+  .rp{min-height:600px}
+  .kit{gap:12px}
+  .row2{grid-template-columns:1fr}
+  .gnb .btn{display:none}
+  .vs{grid-template-columns:1fr;gap:10px}
+  .vs-mid{font-size:20px}
+  .rcard{width:270px}
+}
+@media (prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<header class="gnb">
+  <div class="gnb-in">
+    <a href="https://www.yumone.co.kr/education/" target="_blank"><img src="yumone-official-logo.png" alt="YUMONE COMPANY"></a>
+    <a href="#apply" class="btn shine">교육 상담 신청</a>
+  </div>
+</header>
+<nav class="tabs"><ul>
+  <li><a href="#story">스토리</a></li><li><a href="#timeline">2시간 구성</a></li><li><a href="#curriculum">커리큘럼</a></li>
+  <li><a href="#instructor">강사</a></li><li><a href="#review">후기</a></li><li><a href="#package">수강 방식</a></li><li><a href="#faq">Q&amp;A</a></li>
+</ul></nav>
+
+<div class="wrap">
+<main class="story" id="story">
+
+  <!-- HERO -->
+  <section class="hero">
+    <img src="original-01.jpg" alt="슈퍼바이저들에게 강의하는 염혜단 대표">
+    <div class="hero-txt">
+      <div class="badges"><span class="badge">⏱ 2시간 특강</span><span class="badge dark">프랜차이즈 SV 전용</span></div>
+      <h1><span class="strike">점검하러 오는 SV</span><br><span class="newline">점주가<br><em>기다리는 SV</em>로</span></h1>
+      <p>가맹점 만족을 올리는 SV 커뮤니케이션</p>
+    </div>
+  </section>
+
+  <div class="icons3">
+    <div class="ic3 rv"><span class="e">🗣</span><b>첫마디</b><span>바로 쓰는 말</span></div>
+    <div class="ic3 rv d1"><span class="e">🎭</span><b>역할극</b><span>직접 연습</span></div>
+    <div class="ic3 rv d2"><span class="e">📋</span><b>양식 4종</b><span>들고 복귀</span></div>
+  </div>
+
+  <div class="title-row">
+    <small>염원 SV 아카데미 · 프랜차이즈 본사 교육</small>
+    <h2>점주 불만은 줄이고 신뢰는 쌓는<br>가맹점 만족 SV 커뮤니케이션 2시간 특강</h2>
+  </div>
+
+  <!-- PAIN : chat -->
+  <section class="sec">
+    <div class="kicker rv">혹시 우리 브랜드 얘기?</div>
+    <h3 class="h rv d1">이런 말,<br>들리지 않나요?</h3>
+    <div class="phone rv d2">
+      <div class="phone-top"><i>🏪</i> 가맹점주 단톡방</div>
+      <div class="chatbox" id="chatbox"></div>
+    </div>
+  </section>
+
+  <!-- CHAIN -->
+  <section class="sec">
+    <div class="panel">
+      <div class="chain rv">
+        <div class="cn"><div class="c">🏢</div><b>본사</b></div>
+        <div class="cl"><span class="dot"></span></div>
+        <div class="cn sv"><div class="c">🧑‍💼<span class="x">✕</span></div><b class="red">SV</b></div>
+        <div class="cl after"></div>
+        <div class="cn after"><div class="c">🏪</div><b>점주</b></div>
+        <div class="cl after"></div>
+        <div class="cn after"><div class="c">🙋</div><b>고객</b></div>
+      </div>
+      <p class="chain-msg rv d1">끊어지는 곳은<br><span class="red">늘 SV 구간</span>입니다</p>
+      <p class="sub rv d2">SV의 말이 막히면, 본사도 막힙니다.</p>
+    </div>
+  </section>
+
+  <!-- VS + STAMP -->
+  <section class="sec">
+    <h3 class="h rv">교육을 안 한 게 아니라<br><span class="hl">듣고 끝났을 뿐</span></h3>
+    <div class="vs rv d1">
+      <div class="vs-card bad"><div class="e">👂</div><b>듣고 끝</b><span>좋은 말씀 강의</span></div>
+      <div class="vs-mid">VS</div>
+      <div class="vs-card good"><div class="e">🗣</div><b>해 보고 끝</b><span>역할극 · 토의 · 양식</span></div>
+    </div>
+    <div class="stamp">딱 2시간!</div>
+    <p class="big-line rv">점주가 먼저 연락하는<br><span class="hl">SV 대화 습관</span></p>
+  </section>
+
+  <!-- BEFORE AFTER -->
+  <section class="sec">
+    <div class="kicker rv">같은 말, 다른 결과</div>
+    <h3 class="h rv d1">점주 반응은<br><span class="mark">첫마디</span>에서 갈립니다</h3>
+    <div class="ba rv d2" id="ba" data-m="b">
+      <div class="ba-tabs"><span class="tb">BEFORE</span><span class="ta">AFTER</span></div>
+      <div class="ba-stage">
+        <div class="sv-row"><div class="av">🧑‍💼</div><div class="say" id="baSay"></div></div>
+        <div class="owner"><div class="face" id="baFace">😐</div><div class="react" id="baReact"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMER -->
+  <section class="sec" id="timeline">
+    <div class="kicker rv">2시간 구성</div>
+    <h3 class="h rv d1">120분이면<br>충분합니다</h3>
+    <div class="panel">
+      <div class="timer">
+        <div class="ring" id="ring"><div class="ring-in"><b id="clockMin">0</b><span>/ 120분</span></div></div>
+        <ul class="segs" id="segs">
+          <li data-s="0" data-e="15"><span class="e">🔍</span>셀프 진단<i>15분</i></li>
+          <li data-s="15" data-e="40"><span class="e">🤝</span>SV 역할·마인드<i>25분</i></li>
+          <li data-s="40" data-e="70"><span class="e">💬</span>방문 대화법<i>30분</i></li>
+          <li data-s="70" data-e="105"><span class="e">🎭</span>불만 응대 역할극<i>35분</i></li>
+          <li data-s="105" data-e="120"><span class="e">🚀</span>현장 적용<i>15분</i></li>
+        </ul>
+      </div>
+      <div class="ratio rv">
+        <div class="ratio-bar"><div class="t">이론 30</div><div class="p">실습 70</div></div>
+        <p>듣는 시간보다 <span class="red">말하는 시간</span>이 더 깁니다</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CURRICULUM -->
+  <section class="sec" id="curriculum">
+    <div class="kicker rv">커리큘럼</div>
+    <h3 class="h rv d1">현장에서 바로 꺼내 쓰는<br><span class="hl">4단계</span></h3>
+    <div class="parts">
+      <div class="part rv"><div class="l"><span class="e">🤝</span><small>PART 1</small></div><div class="r"><div class="tm">25분</div><h4>점검자에서<br>매출 파트너로</h4><p>· 점주가 원하는 ‘좋은 SV’</p><p>· 신뢰를 만드는 3가지 기준</p></div></div>
+      <div class="part rv"><div class="l"><span class="e">💬</span><small>PART 2</small></div><div class="r"><div class="tm">30분</div><h4>지적을 제안으로<br>바꾸는 대화법</h4><p>· 안부 → 확인 → 제안 → 약속</p><p>· 본사 정책, 점주 언어로 전달</p></div></div>
+      <div class="part rv"><div class="l"><span class="e">🎭</span><small>PART 3</small></div><div class="r"><div class="tm">35분</div><h4>불만 점주<br>응대 역할극</h4><p>· 감정 인정 → 사실 → 대안 → 약속</p><p>· 팀별 실전 연습 + 피드백</p></div></div>
+      <div class="part rv"><div class="l"><span class="e">🚀</span><small>PART 4</small></div><div class="r"><div class="tm">15분</div><h4>내일 방문에<br>바로 적용</h4><p>· 점주 면담 기록지 작성</p><p>· 2주 실행 약속 세우기</p></div></div>
+    </div>
+    <p class="src" style="text-align:center">* 귀사 SV 경력·업종에 맞춰 사례를 조정합니다.</p>
+  </section>
+
+  <!-- ROLE PLAY -->
+  <section class="sec">
+    <div class="kicker rv">Role Play</div>
+    <h3 class="h rv d1">이런 상황,<br><span class="hl">직접 말로 연습</span>합니다</h3>
+    <div class="panel">
+      <div class="rp" id="rp">
+        <div class="scene on"><span class="no">상황 01 · 매출 하락</span><br><span class="angry">😡</span>
+          <div class="quote">“하라는 대로 다 했는데<br>매출이 왜 이래요?”</div>
+          <div class="flow"><span><i>STEP 1</i>감정 인정</span><span><i>STEP 2</i>데이터 함께</span><span><i>STEP 3</i>실행 1가지</span><span><i>STEP 4</i>재방문 약속</span></div>
+        </div>
+        <div class="scene"><span class="no">상황 02 · 정책 반발</span><br><span class="angry">😤</span>
+          <div class="quote">“이번 프로모션,<br>우리만 손해예요!”</div>
+          <div class="flow"><span><i>STEP 1</i>우려 경청</span><span><i>STEP 2</i>취지 설명</span><span><i>STEP 3</i>매장 맞춤</span><span><i>STEP 4</i>본사 전달</span></div>
+        </div>
+        <div class="scene"><span class="no">상황 03 · 반복 지적</span><br><span class="angry">😮‍💨</span>
+          <div class="quote">“SV님 올 때마다<br>혼나는 기분이에요”</div>
+          <div class="flow"><span><i>STEP 1</i>잘한 점 먼저</span><span><i>STEP 2</i>원인 함께</span><span><i>STEP 3</i>점주가 선택</span><span><i>STEP 4</i>2주 후 확인</span></div>
+        </div>
+      </div>
+      <div class="rp-dots" id="rpDots"><b class="on"></b><b></b><b></b></div>
+    </div>
+  </section>
+
+  <!-- KIT -->
+  <section class="sec">
+    <div class="kicker rv">교육이 끝나도 남는 것</div>
+    <h3 class="h rv d1">빈손으로<br>돌아가지 않습니다</h3>
+    <div class="kit">
+      <div class="doc rv" style="--r:-2deg"><div class="dh">📝 FORM 01</div><div class="ln"></div><div class="ln"></div><div class="ln"></div><div class="ln"></div><span class="ok">완성</span><h5>점주<br>면담 기록지</h5></div>
+      <div class="doc rv d1" style="--r:2deg"><div class="dh">💬 FORM 02</div><div class="ln"></div><div class="ln"></div><div class="ln"></div><div class="ln"></div><span class="ok">완성</span><h5>상황별<br>응대 스크립트</h5></div>
+      <div class="doc rv d2" style="--r:1.5deg"><div class="dh">📊 FORM 03</div><div class="ln"></div><div class="ln"></div><div class="ln"></div><div class="ln"></div><span class="ok">완성</span><h5>가맹점<br>만족 진단표</h5></div>
+      <div class="doc rv d3" style="--r:-1.5deg"><div class="dh">🗓 FORM 04</div><div class="ln"></div><div class="ln"></div><div class="ln"></div><div class="ln"></div><span class="ok">완성</span><h5>2주<br>실행 계획서</h5></div>
+    </div>
+  </section>
+
+  <!-- TARGET -->
+  <section class="sec">
+    <div class="kicker rv">추천 대상</div>
+    <h3 class="h rv d1">이런 분께<br>꼭 필요합니다</h3>
+    <div class="panel">
+      <ul class="check">
+        <li class="rv">점주 면담만 다녀오면<br>진이 빠지는 SV</li>
+        <li class="rv">점검은 잘하는데<br>관계가 어려운 SV</li>
+        <li class="rv">신입 SV 교육이<br>필요한 본사</li>
+        <li class="rv">짧고 실전적인<br>SV 교육을 찾는 운영팀</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- INSTRUCTOR -->
+  <section class="ins" id="instructor">
+    <div class="en rv">Instructor Story</div>
+    <div class="ko">강사 스토리</div>
+    <div class="ins-photo rv d1"><div class="clip"><img src="original-02.jpg" alt="염혜단 대표 프로필 사진" style="border-radius:200px 200px 16px 16px"></div></div>
+    <h4 class="rv">안녕하세요.<br><em>염혜단입니다.</em></h4>
+    <p class="story-line rv">본사 사무실과 가맹점 매장,<br>두 곳 모두에서 일해 봤습니다.</p>
+    <p class="story-line rv">그래서 SV가 매장 문을 열 때<br><b>무엇이 어려운지</b> 압니다.</p>
+    <div class="badges3">
+      <div class="rv"><b>20년</b><span>프랜차이즈 실무</span></div>
+      <div class="rv d1"><b>최초</b><span>평사원 출신<br>여성 임원</span></div>
+      <div class="rv d2"><b>협회</b><span>SV CS<br>전문강사</span></div>
+    </div>
+    <details>
+      <summary>경력 전체 보기 ▾</summary>
+      <ul>
+        <li>(現) ㈜염원컴퍼니 대표이사 (마케팅 &amp; 교육)</li>
+        <li>(前) 죠스푸드, 바르다 김선생 브랜드 마케팅 총괄 임원</li>
+        <li>(前) 멕시카나치킨 마케팅·교육·영업 총괄 임원</li>
+        <li>한국프랜차이즈산업협회 전문강사 (슈퍼바이저 CS, 가맹점 AI 마케팅)</li>
+        <li>서울시 자영업지원센터 온라인 마케팅 업종닥터 (자영업 200여 곳 컨설팅)</li>
+        <li>소상공인진흥공단 희망리턴패키지 심사위원 (2024, 2026)</li>
+        <li>숭실대 중소기업대학원 경영학 석사 (유통 프랜차이즈 경영학 전공)</li>
+      </ul>
+    </details>
+    <div class="books">
+      <img src="original-03.jpg" alt="염혜단 저서 장사의 기술 표지">
+      <p><small>저서</small>『장사의 기술』<br>『프랜차이즈 사업의 모든 것』</p>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="sec">
+    <div class="kicker rv">숫자로 보는 염원 교육</div>
+    <h3 class="h rv d1">수강생이<br>먼저 증명했습니다</h3>
+    <div class="stats">
+      <div class="stat rv"><b><span class="cnt" data-to="500">0</span><small>명+</small></b><span>누적 수강생</span></div>
+      <div class="stat rv d1"><b><span class="cnt" data-to="100">0</span><small>%</small></b><span>수료율</span></div>
+      <div class="stat rv d2"><b><span class="cnt" data-to="5.0" data-dec="1">0</span></b><span>강사 전문성</span></div>
+      <div class="stat rv d3"><b><span class="cnt" data-to="4.9" data-dec="1">0</span></b><span>동료 추천 의향</span></div>
+    </div>
+    <p class="src">누적 수강생: 2025~2026년 염원컴퍼니 CS·AI 마케팅 교육 기준. 수료율(2026년 3개 과정)·만족도(5점 만점, SV 가맹점 CS 2·3회차 항목별 점수) 출처: 2026년 각 회차 운영 결과 보고서(주최·주관 고용노동부, 한국산업인력공단 재직자 훈련).</p>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="sec" id="review">
+    <div class="kicker rv">수강 후기</div>
+    <h3 class="h rv d1">교육이 끝나면<br>수강생이 먼저 말합니다</h3>
+    <div class="mq"><div class="mq-track" id="mq1">
+      <div class="rcard"><div class="st">★★★★★</div><p>“그동안 들은 강의보다 <span class="mark">재밌고 현실감</span> 느껴졌습니다”</p><small>SV 가맹점 CS 수강생</small></div>
+      <div class="rcard"><div class="st">★★★★★</div><p>“<span class="mark">여러 브랜드의 의견</span> 청취 가능한 수업”</p><small>SV 가맹점 CS 수강생</small></div>
+      <div class="rcard"><div class="st">★★★★★</div><p>“강의가 재밌고, <span class="mark">참여행식</span>이라 좋았습니다”</p><small>SV 가맹점 CS 수강생</small></div>
+    </div></div>
+    <div class="mq rev"><div class="mq-track" id="mq2">
+      <div class="rcard"><div class="st">★★★★★</div><p>“바이저들의 고충도 알고 <span class="mark">점주님 입장</span>에서도 생각했습니다”</p><small>SV 가맹점 CS 수강생</small></div>
+      <div class="rcard"><div class="st">★★★★★</div><p>“강사님 에너지와 강의가 <span class="mark">선한영향력</span>을 주십니다”</p><small>SV 가맹점 CS 수강생</small></div>
+      <div class="rcard"><div class="st">★★★★★</div><p>“<span class="mark">잊지 못할 추억</span>이 될 것 같습니다”</p><small>SV 가맹점 CS 수강생</small></div>
+    </div></div>
+    <p class="src" style="text-align:center">교육 만족도 설문 주관식 응답 원문 발췌</p>
+    <div class="slides rv">
+      <figure><img src="original-04.jpg" alt="역할극을 준비하는 수강생들"><figcaption>🎭 점주 응대 역할극</figcaption></figure>
+      <figure><img src="original-05.jpg" alt="팀별 토의하는 슈퍼바이저들"><figcaption>💬 팀별 분임토의</figcaption></figure>
+      <figure><img src="original-06.jpg" alt="팀 결과를 발표하는 수강생"><figcaption>🎤 팀별 결과 발표</figcaption></figure>
+      <figure><img src="original-01.jpg" alt="강의하는 염혜단 대표"><figcaption>🔥 SV 실무 교육 현장</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- PACKAGES -->
+  <section class="sec" id="package">
+    <div class="kicker rv">💡 우리 본사에 맞는 방식은?</div>
+    <h3 class="h rv d1">수강 방식 선택</h3>
+    <div class="pkgs">
+      <div class="pkg best rv"><span class="flag">🔥 가장 많이 찾는 방식</span>
+        <div class="e">🏢</div><div class="k">A. 오프라인 출강</div>
+        <h5>우리 본사로 찾아가는<br>2시간 특강</h5>
+        <div class="tags"><span>귀사 사례 역할극</span><span>양식 4종</span><span>SV+운영팀</span></div>
+        <div class="bot"><b>맞춤 견적</b><a href="#apply" class="btn shine">상담 신청 →</a></div>
+      </div>
+      <div class="pkg rv d1">
+        <div class="e">💻</div><div class="k">B. 온라인 실시간</div>
+        <h5>전국 SV가 함께 접속하는<br>2시간 워크숍</h5>
+        <div class="tags"><span>소그룹 역할극</span><span>공통 응대 기준</span><span>자료 파일</span></div>
+        <div class="bot"><b>맞춤 견적</b><a href="#apply" class="btn ghost">상담 신청 →</a></div>
+      </div>
+      <div class="pkg rv d2">
+        <div class="e">🎓</div><div class="k">C. 심화 연계</div>
+        <h5>2시간 특강 +<br>SV 아카데미 6시간</h5>
+        <div class="tags"><span>역할·마인드</span><span>소통·갈등 대응</span><span>현장 실행</span></div>
+        <div class="bot"><b>맞춤 견적</b><a href="#apply" class="btn ghost">상담 신청 →</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="sec" id="faq">
+    <h3 class="h rv">💬 Q&amp;A</h3>
+    <div class="faq">
+      <details class="rv"><summary>Q. 2시간이면 짧지 않나요?</summary><p>‘점주와의 대화’ 하나에만 집중합니다. 이론은 짧게, 역할극은 길게. 다음 날 방문부터 쓸 문장을 가져갑니다.</p></details>
+      <details class="rv"><summary>Q. 우리 본사에 맞춰 바꿀 수 있나요?</summary><p>네. 참여자 역할과 수준을 먼저 확인하고, 가능하면 귀사 매장 사례로 실습합니다.</p></details>
+      <details class="rv"><summary>Q. SV가 몇 명이어야 하나요?</summary><p>인원 제한은 없습니다. 적으면 SV와 본사 직원을 함께 묶어 진행합니다.</p></details>
+      <details class="rv"><summary>Q. 온라인도 역할극이 되나요?</summary><p>네. 소그룹으로 나눠 점주 역·SV 역·관찰자 역을 돌아가며 연습합니다.</p></details>
+      <details class="rv"><summary>Q. 비용은 어떻게 정해지나요?</summary><p>대상, 인원, 시간, 장소, 맞춤 자료 범위를 합의한 뒤 견적을 드립니다.</p></details>
+    </div>
+  </section>
+
+  <!-- APPLY -->
+  <section class="apply" id="apply">
+    <span class="badge">교육 상담 신청</span>
+    <h3 class="h" style="margin-top:18px">우리 SV에게<br>필요한 2시간</h3>
+    <p class="sub" style="color:#cfd0d4">알려주시면 맞춤 구성과 견적을 안내드립니다.</p>
+    <form class="form" id="applyForm">
+      <div class="row2">
+        <label>담당자 성함 *<input name="name" required placeholder="홍길동"></label>
+        <label>브랜드/회사명 *<input name="brand" required placeholder="OO프랜차이즈"></label>
+      </div>
+      <div class="row2">
+        <label>연락처 *<input name="tel" required placeholder="010-0000-0000"></label>
+        <label>예상 인원<select name="people"><option>10명 미만</option><option>10~20명</option><option>20~40명</option><option>40명 이상</option></select></label>
+      </div>
+      <label>희망 방식<select name="type"><option>A. 오프라인 출강</option><option>B. 온라인 실시간</option><option>C. 심화 연계</option><option>상담 후 결정</option></select></label>
+      <label>SV 현장 고민 한 줄<textarea name="msg" rows="3" placeholder="예) 신입 SV가 점주 응대를 어려워해요"></textarea></label>
+      <label class="agree"><input type="checkbox" required> 상담을 위한 개인정보(성함, 연락처) 수집·이용에 동의합니다.</label>
+      <button class="btn block pulse shine" type="submit">무료 교육 상담 신청하기 →</button>
+    </form>
+    <div class="contact"><a href="tel:0269496859">📞 02-6949-6859</a><a href="mailto:yumone300@gmail.com">✉ yumone300@gmail.com</a></div>
+  </section>
+</main>
+
+<aside class="aside">
+  <div class="side">
+    <div class="k">염원 SV 아카데미 · 2시간 특강</div>
+    <h3>가맹점 만족을 올리는<br>SV 커뮤니케이션</h3>
+    <div class="side-grid">
+      <div><div class="e">⏱</div><b>120분</b><small>교육 시간</small></div>
+      <div><div class="e">🎭</div><b>실습 70%</b><small>역할극 중심</small></div>
+      <div><div class="e">⭐</div><b>5.0</b><small>강사 전문성</small></div>
+      <div><div class="e">📋</div><b>양식 4종</b><small>제공 자료</small></div>
+    </div>
+    <a href="#apply" class="btn block pulse shine">교육 상담 신청하기</a>
+    <p class="side-note">출강 · 온라인 실시간 / 맞춤 견적</p>
+    <div class="side-maker"><img src="original-02.jpg" alt="염혜단 대표"><div><b>염혜단 대표</b><small>㈜염원컴퍼니 · 협회 전문강사</small></div></div>
+  </div>
+</aside>
+</div>
+
+<footer>
+  <img src="yumone-logo-white.svg" alt="YUMONE COMPANY">
+  <p>㈜염원컴퍼니 · 프랜차이즈 SV·가맹점 교육 전문</p>
+  <p>T. 02-6949-6859 · E. yumone300@gmail.com · <a href="https://www.yumone.co.kr/education/" target="_blank" style="text-decoration:underline">www.yumone.co.kr</a></p>
+</footer>
+
+<div class="mbar"><a href="tel:0269496859" class="btn tel">📞</a><a href="#apply" class="btn shine">교육 상담 신청하기</a></div>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var sleep = function(ms){return new Promise(function(r){setTimeout(r,ms)})};
+
+  /* scroll reveal + count up */
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(!e.isIntersecting) return;
+      e.target.classList.add('in');
+      e.target.querySelectorAll && e.target.querySelectorAll('.cnt').forEach(countUp);
+      io.unobserve(e.target);
+    });
+  },{threshold:.18});
+  document.querySelectorAll('.rv,.ratio').forEach(function(el){io.observe(el)});
+  function countUp(el){
+    if(el.dataset.done) return; el.dataset.done=1;
+    var to=parseFloat(el.dataset.to), dec=+(el.dataset.dec||0), t0=null, dur=1600;
+    function step(t){ if(!t0) t0=t; var p=Math.min((t-t0)/dur,1); var v=to*(1-Math.pow(1-p,3)); el.textContent=v.toFixed(dec); if(p<1) requestAnimationFrame(step); }
+    requestAnimationFrame(step);
+  }
+
+  /* chat loop */
+  var chat=document.getElementById('chatbox');
+  var msgs=[
+    {t:'SV님은 오면 점검표만 체크하고 가요 😑',w:'가맹점주 A'},
+    {t:'본사는 우리 매출 떨어진 건 관심도 없잖아요',w:'가맹점주 B'},
+    {t:'점주님이 제 전화를 안 받으세요… 😥',w:'입사 1년 차 SV',me:1},
+    {t:'SV 교육 보냈는데 현장은 그대로예요',w:'본사 운영팀',me:1}
+  ];
+  async function chatLoop(){
+    while(true){
+      chat.innerHTML='';
+      for(var i=0;i<msgs.length;i++){
+        var m=msgs[i];
+        var ty=document.createElement('div'); ty.className='typing'+(m.me?' me':''); ty.innerHTML='<i></i><i></i><i></i>';
+        chat.appendChild(ty); await sleep(1100); ty.remove();
+        var d=document.createElement('div'); d.className='msg'+(m.me?' me':''); d.innerHTML='<small>'+m.w+'</small>'+m.t;
+        chat.appendChild(d); await sleep(1300);
+      }
+      await sleep(3000);
+    }
+  }
+
+  /* before / after loop */
+  var ba=document.getElementById('ba'), say=document.getElementById('baSay'), face=document.getElementById('baFace'), react=document.getElementById('baReact');
+  var modes=[
+    {m:'b',t:'위생 점수 또 미흡이에요. 다음 방문 전까지 개선하세요.',f:'😤',r:'“또 지적이네…”'},
+    {m:'a',t:'지난번 인력 문제는 좀 어떠세요? 같이 하나만 정해볼까요?',f:'😊',r:'“내 얘기를 기억하네!”'}
+  ];
+  async function baLoop(){
+    var i=0;
+    while(true){
+      var o=modes[i%2]; ba.dataset.m=o.m; say.textContent=''; say.classList.remove('done'); react.classList.remove('on'); face.textContent='😐';
+      await sleep(500);
+      for(var k=1;k<=o.t.length;k++){ say.textContent=o.t.slice(0,k); await sleep(55); }
+      say.classList.add('done'); await sleep(400);
+      face.textContent=o.f; face.classList.remove('bump'); void face.offsetWidth; face.classList.add('bump');
+      react.textContent=o.r; react.classList.add('on');
+      await sleep(3000); i++;
+    }
+  }
+
+  /* 120 min timer loop */
+  var ring=document.getElementById('ring'), cm=document.getElementById('clockMin'), segs=[].slice.call(document.querySelectorAll('#segs li'));
+  async function timerLoop(){
+    while(true){
+      for(var m=0;m<=120;m++){
+        var p=m/120*100;
+        ring.style.background='conic-gradient(#E3202B '+p+'%, #e8e4df 0)';
+        cm.textContent=m;
+        segs.forEach(function(li){var s=+li.dataset.s,e=+li.dataset.e; li.classList.toggle('on',m>=s&&m<e||(m===120&&e===120)); li.classList.toggle('done',m>=e&&!(m===120&&e===120));});
+        await sleep(m===0?400:62);
+      }
+      await sleep(2200);
+    }
+  }
+
+  /* role play carousel */
+  var scenes=[].slice.call(document.querySelectorAll('#rp .scene')), dots=[].slice.call(document.querySelectorAll('#rpDots b')), cur=0, jump=null;
+  dots.forEach(function(d,i){d.addEventListener('click',function(){jump=i;})});
+  async function rpLoop(){
+    while(true){
+      scenes.forEach(function(s,i){s.classList.toggle('on',i===cur)}); dots.forEach(function(d,i){d.classList.toggle('on',i===cur)});
+      var steps=scenes[cur].querySelectorAll('.flow span'); steps.forEach(function(s){s.classList.remove('on')});
+      await sleep(1500);
+      for(var k=0;k<steps.length;k++){ if(jump!==null) break; steps[k].classList.add('on'); await sleep(750); }
+      for(var w=0;w<20&&jump===null;w++) await sleep(100);
+      if(jump!==null){cur=jump;jump=null;} else cur=(cur+1)%scenes.length;
+    }
+  }
+
+  /* marquee duplicate */
+  ['mq1','mq2'].forEach(function(id){var t=document.getElementById(id); t.innerHTML+=t.innerHTML;});
+
+  if(reduce){
+    msgs.forEach(function(m){var d=document.createElement('div');d.className='msg'+(m.me?' me':'');d.innerHTML='<small>'+m.w+'</small>'+m.t;chat.appendChild(d);});
+    say.textContent=modes[1].t; face.textContent=modes[1].f; react.textContent=modes[1].r; react.classList.add('on'); ba.dataset.m='a';
+    scenes[0].querySelectorAll('.flow span').forEach(function(s){s.classList.add('on')});
+  } else { chatLoop(); baLoop(); timerLoop(); rpLoop(); }
+
+  /* form → mailto */
+  document.getElementById('applyForm').addEventListener('submit',function(e){
+    e.preventDefault(); var f=new FormData(this);
+    var body='[SV 커뮤니케이션 2시간 특강 상담 신청]\n\n담당자: '+f.get('name')+'\n브랜드/회사: '+f.get('brand')+'\n연락처: '+f.get('tel')+'\n예상 인원: '+f.get('people')+'\n희망 방식: '+f.get('type')+'\n\n현장 고민:\n'+f.get('msg');
+    location.href='mailto:yumone300@gmail.com?subject='+encodeURIComponent('[교육 상담] SV 커뮤니케이션 2시간 특강 - '+f.get('brand'))+'&body='+encodeURIComponent(body);
+  });
+})();
+</script>
+</body>
+</html>
